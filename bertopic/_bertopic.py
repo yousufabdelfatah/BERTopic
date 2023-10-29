@@ -670,9 +670,9 @@ class BERTopic:
 
     def topics_over_time(self,
                          docs: List[str],
-                         topics: List[int] = self.topics_,
                          timestamps: Union[List[str],
                                            List[int]],
+                         topics: List[int] = None,
                          nr_bins: int = None,
                          datetime_format: str = None,
                          evolution_tuning: bool = True,
